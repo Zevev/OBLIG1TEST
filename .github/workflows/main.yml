@@ -21,7 +21,7 @@ jobs:
         uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
 
       - name: Run Tasks
-        run: ./src/test/java/Leap_Year_Test build
+        run: ./gradlew test --tests "*"
 
       - name: Run the Gradle package task
         run: ./gradlew build
